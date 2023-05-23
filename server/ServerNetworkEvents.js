@@ -604,7 +604,7 @@ var ServerNetworkEvents = {
 		var isUserDeveloper = modPlayer.isDeveloper();
 			
 		if (isUserDeveloper && kickedPlayer) {
-			taro.game.kickPlayer(kickedPlayer.id(), modPlayer.id());
+			taro.game.kickPlayer(kickedPlayer.id(), { modPlayerId: modPlayer.id() });
 		}
 	},
 	
